@@ -20,7 +20,7 @@ AreaCode numeric(10),
 Phone varchar(20) CONSTRAINT call_phone_pk PRIMARY KEY
 );
 
-COPY call FROM '${HOME}/source/injected/injected-files/CallsData.csv' ( FORMAT CSV, DELIMITER(';'), HEADER(TRUE));
+COPY call FROM '/home/jboss/source/injected/injected-files/CallsData.csv' ( FORMAT CSV, DELIMITER(';'), HEADER(TRUE));
 
 drop table contract;
 create table contract (
@@ -33,4 +33,4 @@ AreaCode numeric(10),
 Phone varchar(25) CONSTRAINT contract_phone_pk PRIMARY KEY
 );
 
-COPY contract FROM '${HOME}/source/injected/injected-files/ContractData.csv' ( FORMAT CSV, DELIMITER(','), HEADER(TRUE));
+COPY contract FROM '/home/jboss/source/injected/injected-files/ContractData.csv' ( FORMAT CSV, DELIMITER(','), HEADER(TRUE));

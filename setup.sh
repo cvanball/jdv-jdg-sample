@@ -9,6 +9,6 @@ oc new-project churnprediction
 echo 'Creating a service account and accompanying secret for use by the datavirt application'
 oc create -f datavirt-app-secret.yaml
 echo 'Add the role view to the service account under which the pod is running'
-oadm policy add-role-to-user view system:serviceaccount:churnprediction:datavirt-service-account
+oc adm policy add-role-to-user view system:serviceaccount:churnprediction:datavirt-service-account
 echo 'Deploying churnprediction template with default values and JDV with JDG'
 oc process -f churnprediction-template.json | oc create -f -
