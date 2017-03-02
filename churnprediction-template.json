@@ -508,7 +508,7 @@
                 "source": {
                     "type": "Git",
                     "git": {
-                        "uri": "http://github.com/bdecoste/jdv-jdg-sample",
+                        "uri": "http://github.com/cvanball/jdv-jdg-sample",
                         "ref": ""
                     },
                     "contextDir": ""
