@@ -520,7 +520,7 @@
                 "output": {
                     "to": {
                         "kind": "ImageStreamTag",
-                        "namespace": "demo",
+                        "namespace": "churnprediction",
                         "name": "jdv-jdg-extensions:1.0"
                     }
                 },
@@ -568,7 +568,7 @@
                         {
                             "from": {
                                 "kind": "ImageStreamTag",
-                                "namespace": "demo",
+                                "namespace": "churnprediction",
                                 "name": "jdv-jdg-extensions:1.0"
                             },
                             "paths": [

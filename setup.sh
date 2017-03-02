@@ -6,5 +6,7 @@ oc -n openshift import-image jboss-datavirt63-openshift --insecure=true
 oc login -u developer -p developer
 echo 'Creating a new project called churnprediction'
 oc new-project churnprediction
+echo 'Creating a service account and accompanying secret for use by the datavirt application'
+oc create -f datavirt-app-secret.yaml
 echo 'Deploying churnprediction template with default values and JDV with JDG'
 oc process -f churnprediction-template.json | oc create -f -
