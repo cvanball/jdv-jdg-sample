@@ -36,7 +36,7 @@
         {
             "description": "Git source URI for application",
             "name": "SOURCE_REPOSITORY_URL",
-            "value": "https://github.com/bdecoste/jdv-jdg-sample",
+            "value": "https://github.com/cvanball/jdv-jdg-sample",
             "required": true
         },
         {
@@ -54,19 +54,19 @@
         {
             "description": "List of directories from which archives will be copied into the deployment folder.  If unspecified, all archives in /target will be copied.",
             "name": "ARTIFACT_DIR",
-            "value": "jdg-remote-cache/target,jdg-remote-cache-materialization/target",
+            "value": "jdg-remote-cache/target",
             "required": false
         },
         {
             "description": "Database JNDI name used by application to resolve the datasource, e.g. java:/jboss/datasources/postgresql",
             "name": "DB_JNDI",
-            "value": "java:/accounts-ds",
+            "value": "java:/sko-ds",
             "required": false
         },
         {
             "description": "Database name",
             "name": "DB_DATABASE",
-            "value": "root",
+            "value": "sko",
             "required": true
         },
         {
@@ -151,7 +151,7 @@
         {
             "description": "Password for JDV TEIID_USERNAME",
             "name": "TEIID_PASSWORD",
-            "value": "P@ssword1",
+            "value": "redhat1!",
             "required": true
         },
         {
@@ -163,7 +163,7 @@
         {
             "description": "Password for JDV MODESHAPE_USERNAME",
             "name": "MODESHAPE_PASSWORD",
-            "value": "P@ssword1",
+            "value": "redhat1!",
             "required": true
         },
         {
@@ -211,7 +211,7 @@
         {
             "description": "Comma-separated list of caches to configure.  By default, a distributed-cache, with a mode of SYNC will be configured for each entry.",
             "name": "CACHE_NAMES",
-            "value": "",
+            "value": "callCache,contractCache",
             "required": false
         },
         {
@@ -235,7 +235,7 @@
         {
             "description": "List of directories from which VDBS will be copied into the deployment folder.  If unspecified, all archives in source will be copied.",
             "name": "VDB_DIRS",
-            "value": "jdg-remote-cache-materialization/src/vdb",
+            "value": "vdb",
             "required": false
         }
     ],

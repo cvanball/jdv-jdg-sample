@@ -45,10 +45,9 @@
         The "your.pojo.module" name needs to be replaced with the module name that has
         the java class(s) that's being stored in the JDG cache         
         -->
-        <module name="com.client.quickstart.addressbook.pojos"  optional="true"  export="true" />
+        <module name="com.redhat.demo.sko.pojo"  optional="true"  export="true" />
   
-        <module name="your.pojo.module"  optional="true"  export="true" />
-      
+        
     </dependencies>
 </module>
 
