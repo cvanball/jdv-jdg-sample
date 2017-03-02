@@ -20,7 +20,7 @@ AreaCode numeric(10),
 Phone varchar(20) CONSTRAINT call_phone_pk PRIMARY KEY
 );
 
-COPY call FROM '/Users/cvanball/Projects/sko/ChurnPrediction/files/csv/CallsData.csv' ( FORMAT CSV, DELIMITER(';'), HEADER(TRUE));
+COPY call FROM 'CallsData.csv' ( FORMAT CSV, DELIMITER(';'), HEADER(TRUE));
 
 drop table contract;
 create table contract (
@@ -33,4 +33,4 @@ AreaCode numeric(10),
 Phone varchar(25) CONSTRAINT contract_phone_pk PRIMARY KEY
 );
 
-COPY contract FROM '/Users/cvanball/Projects/sko/ChurnPrediction/files/csv/ContractData.csv' ( FORMAT CSV, DELIMITER(','), HEADER(TRUE));
+COPY contract FROM 'ContractData.csv' ( FORMAT CSV, DELIMITER(','), HEADER(TRUE));
