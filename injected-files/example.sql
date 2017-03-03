@@ -1,6 +1,4 @@
-drop database sko;
-create database sko;
-drop table call;
+drop table if exists call;
 create table call (
 VmailMessage numeric(10),
 DayMins decimal(10,2),
@@ -22,7 +20,7 @@ Phone varchar(20) CONSTRAINT call_phone_pk PRIMARY KEY
 
 \COPY call FROM '/home/jboss/source/injected/injected-files/CallsData.csv' ( FORMAT CSV, DELIMITER(';'), HEADER(TRUE));
 
-drop table contract;
+drop table if exists contract;
 create table contract (
 AccountLength numeric(10),
 Churn numeric(10),
