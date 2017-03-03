@@ -987,7 +987,7 @@
                                         "value": "${JGROUPS_CLUSTER_PASSWORD}"
                                     },
                                     {
-                                        "name": "DATAVIRT_CACHE_NAMES",
+                                        "name": "CACHE_NAMES",
                                         "value": "${CACHE_NAMES}"
                                     }
                                 ]
