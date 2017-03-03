@@ -428,6 +428,26 @@
             }
         },
         {
+            "kind": "Route",
+            "apiVersion": "v1",
+            "id": "${APPLICATION_NAME}-hotrod",
+            "metadata": {
+                "name": "hotrod-${APPLICATION_NAME}",
+                "labels": {
+                    "application": "${APPLICATION_NAME}"
+                },
+                "annotations": {
+                    "description": "Route for application's hotrod service."
+                }
+            },
+            "spec": {
+                "host": "${HOSTNAME_HTTPS}",
+                "to": {
+                    "name": "hotrod-${APPLICATION_NAME}"
+                }
+            }
+        },
+        {
             "kind": "ImageStream",
             "apiVersion": "v1",
             "metadata": {
