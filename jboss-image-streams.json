@@ -20,7 +20,7 @@
 
             },
             "spec": {
-                "dockerImageRepository": "ce-registry.usersys.redhat.com/jboss-datagrid-6/datagrid65-openshift",
+                "dockerImageRepository": "ce-registry.usersys.redhat.com/bdecoste/datagrid65-openshift",
                 "tags": [
                     {
                         "name": "1.3",

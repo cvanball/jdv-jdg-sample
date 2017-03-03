@@ -944,7 +944,7 @@
                                     },
                                     {
                                         "name": "CACHE_NAMES",
-                                        "value": "${CACHE_NAMES}"
+                                        "value": "default"
                                     },
                                     {
                                         "name": "ENCRYPTION_REQUIRE_SSL_CLIENT_AUTH",
